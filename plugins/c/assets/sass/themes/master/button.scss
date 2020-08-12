@@ -1,0 +1,106 @@
+@import "./border.scss";
+@import "./colors.scss";
+
+.ivu-btn{
+    @extend %coc-standard-border-radius;
+}
+
+//States
+
+.ivu-btn.ivu-btn-primary{
+	@extend %coc-primary-bg;
+	@extend %coc-primary-border;
+	@extend %coc-light-background-text;
+}
+.ivu-btn.ivu-btn-primary:hover{
+	@extend %coc-light-primary-bg;
+	@extend %coc-light-primary-border;
+	@extend %coc-light-background-text;
+}
+
+.ivu-btn.ivu-btn-info{
+	@extend %coc-info-bg;
+	@extend %coc-info-border;
+	@extend %coc-light-background-text;
+}
+.ivu-btn.ivu-btn-info:hover{
+	@extend %coc-light-info-bg;
+	@extend %coc-light-info-border;
+	@extend %coc-light-background-text;
+}
+
+.ivu-btn.ivu-btn-error{
+	@extend %coc-error-bg;
+	@extend %coc-error-border;
+	@extend %coc-light-background-text;
+}
+.ivu-btn.ivu-btn-error:hover{
+	@extend %coc-light-error-bg;
+	@extend %coc-light-error-border;
+	@extend %coc-light-background-text;
+}
+
+.ivu-btn.ivu-btn-warning{
+	@extend %coc-warning-bg;
+	@extend %coc-warning-border;
+	@extend %coc-light-background-text;
+}
+.ivu-btn.ivu-btn-warning:hover{
+	@extend %coc-light-warning-bg;
+	@extend %coc-light-warning-border;
+	@extend %coc-light-background-text;
+}
+.ivu-btn.ivu-btn-default{
+	@extend %coc-light-background-bg;
+	@extend %coc-light-primary-border;
+	@extend %coc-primary-text;
+}
+.ivu-btn.ivu-btn-default:hover{
+	@extend %coc-background-bg;
+	@extend %coc-primary-border;
+	@extend %coc-primary-text;
+}
+
+
+.ivu-btn-ghost.ivu-btn.ivu-btn-primary{
+	@extend %coc-primary-border;
+	@extend %coc-primary-text;
+	border-width: 1px;
+	background-color: transparent;
+}
+.ivu-btn-ghost.ivu-btn.ivu-btn-primary:hover{
+	@extend %coc-light-primary-border;
+	@extend %coc-light-primary-bg;
+	@extend %coc-white-text;
+}
+
+.ivu-btn-ghost.ivu-btn.ivu-btn-info{
+	@extend %coc-info-border;
+	@extend %coc-info-text;
+	background-color: transparent;
+}
+.ivu-btn-ghost.ivu-btn.ivu-btn-info:hover{
+	@extend %coc-light-info-bg;
+	@extend %coc-light-info-border;
+	@extend %coc-dark-info-text;
+}
+
+.ivu-btn-ghost.ivu-btn.ivu-btn-error{
+	@extend %coc-error-border;
+	background-color: transparent;
+}
+.ivu-btn-ghost.ivu-btn.ivu-btn-error:hover{
+	@extend %coc-light-error-bg;
+	@extend %coc-light-error-border;
+	@extend %coc-white-text;
+}
+
+.ivu-btn-ghost.ivu-btn.ivu-btn-warning{
+	@extend %coc-warning-border;
+	background-color: transparent;
+}
+.ivu-btn-ghost.ivu-btn.ivu-btn-warning:hover{
+	@extend %coc-light-warning-bg;
+	@extend %coc-light-warning-border;
+	@extend %coc-white-text;
+}

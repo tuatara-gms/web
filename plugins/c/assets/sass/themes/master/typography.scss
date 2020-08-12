@@ -1,0 +1,70 @@
+@import "./variables.scss";
+@each $size, $current-size in $typography-sizes {
+    %coc-text-#{$size} { 
+        font-size: $current-size;
+    }
+    .coc-text-#{$size} { 
+        font-size: $current-size;
+    }
+    %coc-text-hover-#{$size}:hover { 
+        font-size: $current-size;
+    }
+    .coc-text-hover-#{$size}:hover { 
+        font-size: $current-size;
+    }
+    %coc-line-height-#{$size} { 
+        line-height: $current-size;
+    }
+    .coc-line-height-#{$size} { 
+        line-height: $current-size;
+    }
+}
+
+%coc-text-bold{
+	font-weight: bold !important;
+}
+%coc-text-italic{
+    font-style: italic !important;
+}
+%coc-text-thin{
+	font-weight: thin !important;
+}
+%coc-text-right{
+    text-align: right !important;
+}
+%coc-text-left{
+    text-align: left !important;
+}
+%coc-text-center{
+    text-align: center !important;
+}
+.coc-text-bold{
+	@extend %coc-text-bold;
+}
+.coc-text-italic{
+    @extend %coc-text-italic;
+}
+.coc-text-thin{
+	@extend %coc-text-thin;
+}
+.coc-text-right{
+    @extend %coc-text-right;
+}
+.coc-text-left{
+    @extend %coc-text-left;
+}
+.coc-text-center{
+    @extend %coc-text-center;
+}
+%coc-smooth-font-size{
+  transition: font-size linear 0.1s;
+}
+.coc-smooth-font-size{
+  transition: font-size linear 0.1s;
+}
+%coc-smooth-font-color{
+  transition: color linear 0.1s;
+}
+.coc-smooth-font-color{
+  transition: color linear 0.1s;
+}

@@ -1,0 +1,156 @@
+$units: (
+	"%": "perc",
+	"rem": "rem",
+	"vh": "vh",
+	"vw": "vw",
+	"px": "px"
+);
+@each $unit, $unit-name in $units{
+  @for $i from 1 through 50{
+  	@if ($unit == 'rem') or ($unit == '%') {
+  		%coc-padding-#{$i}#{$unit-name}{
+		 	padding: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-x-#{$i / 5}#{$unit-name}{
+		 	padding-right: #{$i / 5}#{$unit} !important;
+		 	padding-left: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-padding-y-#{$i / 5}#{$unit-name}{
+		 	padding-top: #{$i / 5}#{$unit} !important;
+		 	padding-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-padding-top-#{$i / 5}#{$unit-name}{
+		 	padding-top: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-padding-bottom-#{$i / 5}#{$unit-name}{
+		 	padding-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-padding-right-#{$i / 5}#{$unit-name}{
+		 	padding-right: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-padding-left-#{$i / 5}#{$unit-name}{
+		 	padding-left: #{$i / 5}#{$unit} !important;
+		 }
+
+  		.coc-padding-#{$i}#{$unit-name}{
+		 	padding: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-x-#{$i / 5}#{$unit-name}{
+		 	padding-right: #{$i / 5}#{$unit} !important;
+		 	padding-left: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-padding-y-#{$i / 5}#{$unit-name}{
+		 	padding-top: #{$i / 5}#{$unit} !important;
+		 	padding-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-padding-top-#{$i / 5}#{$unit-name}{
+		 	padding-top: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-padding-bottom-#{$i / 5}#{$unit-name}{
+		 	padding-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-padding-right-#{$i / 5}#{$unit-name}{
+		 	padding-right: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-padding-left-#{$i / 5}#{$unit-name}{
+		 	padding-left: #{$i / 5}#{$unit} !important;
+		 }
+  	}
+  	@else {
+  		%coc-padding-#{$i}#{$unit-name}{
+		 	padding: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-x-#{$i}#{$unit-name}{
+		 	padding-right: #{$i}#{$unit} !important;
+		 	padding-left: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-y-#{$i}#{$unit-name}{
+		 	padding-top: #{$i}#{$unit} !important;
+		 	padding-bottom: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-top-#{$i}#{$unit-name}{
+		 	padding-top: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-bottom-#{$i}#{$unit-name}{
+		 	padding-bottom: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-right-#{$i}#{$unit-name}{
+		 	padding-right: #{$i}#{$unit} !important;
+		 }
+		 %coc-padding-left-#{$i}#{$unit-name}{
+		 	padding-left: #{$i}#{$unit} !important;
+		 }
+
+		 .coc-padding-#{$i}#{$unit-name}{
+		 	padding: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-x-#{$i}#{$unit-name}{
+		 	padding-right: #{$i}#{$unit} !important;
+		 	padding-left: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-y-#{$i}#{$unit-name}{
+		 	padding-top: #{$i}#{$unit} !important;
+		 	padding-bottom: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-top-#{$i}#{$unit-name}{
+		 	padding-top: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-bottom-#{$i}#{$unit-name}{
+		 	padding-bottom: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-right-#{$i}#{$unit-name}{
+		 	padding-right: #{$i}#{$unit} !important;
+		 }
+		 .coc-padding-left-#{$i}#{$unit-name}{
+		 	padding-left: #{$i}#{$unit} !important;
+		 }
+  	}
+	 
+   }
+}
+%coc-padding-0{
+ 	padding: 0 !important;
+ }
+ %coc-padding-x-0{
+ 	padding-right: 0 !important;
+ 	padding-left: 0 !important;
+ }
+ %coc-padding-y-0{
+ 	padding-top: 0 !important;
+ 	padding-bottom: 0 !important;
+ }
+ %coc-padding-top-0{
+ 	padding-top: 0 !important;
+ }
+ %coc-padding-bottom-0{
+ 	padding-bottom: 0 !important;
+ }
+ %coc-padding-right-0{
+ 	padding-right: 0 !important;
+ }
+ %coc-padding-left-0{
+ 	padding-left: 0 !important;
+ }
+.coc-padding-0{
+ 	padding: 0 !important;
+ }
+ .coc-padding-x-0{
+ 	padding-right: 0 !important;
+ 	padding-left: 0 !important;
+ }
+ .coc-padding-y-0{
+ 	padding-top: 0 !important;
+ 	padding-bottom: 0 !important;
+ }
+ .coc-padding-top-0{
+ 	padding-top: 0 !important;
+ }
+ .coc-padding-bottom-0{
+ 	padding-bottom: 0 !important;
+ }
+ .coc-padding-right-0{
+ 	padding-right: 0 !important;
+ }
+ .coc-padding-left-0{
+ 	padding-left: 0 !important;
+ }

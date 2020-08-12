@@ -1,0 +1,154 @@
+$units: (
+	"%": "perc",
+	"rem": "rem",
+	"vh": "vh",
+	"vw": "vw",
+	"px": "px"
+);
+@each $unit, $unit-name in $units{
+  @for $i from 1 through 30{
+  	@if ($unit == 'rem') or ($unit == '%') {
+  		.coc-margin-#{$i}#{$unit-name}{
+		 	margin: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-x-#{$i / 5}#{$unit-name}{
+		 	margin-right: #{$i / 5}#{$unit} !important;
+		 	margin-left: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-margin-y-#{$i / 5}#{$unit-name}{
+		 	margin-top: #{$i / 5}#{$unit} !important;
+		 	margin-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-margin-top-#{$i / 5}#{$unit-name}{
+		 	margin-top: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-margin-bottom-#{$i / 5}#{$unit-name}{
+		 	margin-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-margin-right-#{$i / 5}#{$unit-name}{
+		 	margin-right: #{$i / 5}#{$unit} !important;
+		 }
+		 .coc-margin-left-#{$i / 5}#{$unit-name}{
+		 	margin-left: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-#{$i}#{$unit-name}{
+		 	margin: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-x-#{$i / 5}#{$unit-name}{
+		 	margin-right: #{$i / 5}#{$unit} !important;
+		 	margin-left: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-y-#{$i / 5}#{$unit-name}{
+		 	margin-top: #{$i / 5}#{$unit} !important;
+		 	margin-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-top-#{$i / 5}#{$unit-name}{
+		 	margin-top: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-bottom-#{$i / 5}#{$unit-name}{
+		 	margin-bottom: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-right-#{$i / 5}#{$unit-name}{
+		 	margin-right: #{$i / 5}#{$unit} !important;
+		 }
+		 %coc-margin-left-#{$i / 5}#{$unit-name}{
+		 	margin-left: #{$i / 5}#{$unit} !important;
+		 }
+  	}
+  	@else {
+  		.coc-margin-#{$i}#{$unit-name}{
+		 	margin: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-x-#{$i}#{$unit-name}{
+		 	margin-right: #{$i}#{$unit} !important;
+		 	margin-left: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-y-#{$i}#{$unit-name}{
+		 	margin-top: #{$i}#{$unit} !important;
+		 	margin-bottom: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-top-#{$i}#{$unit-name}{
+		 	margin-top: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-bottom-#{$i}#{$unit-name}{
+		 	margin-bottom: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-right-#{$i}#{$unit-name}{
+		 	margin-right: #{$i}#{$unit} !important;
+		 }
+		 .coc-margin-left-#{$i}#{$unit-name}{
+		 	margin-left: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-#{$i}#{$unit-name}{
+		 	margin: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-x-#{$i}#{$unit-name}{
+		 	margin-right: #{$i}#{$unit} !important;
+		 	margin-left: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-y-#{$i}#{$unit-name}{
+		 	margin-top: #{$i}#{$unit} !important;
+		 	margin-bottom: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-top-#{$i}#{$unit-name}{
+		 	margin-top: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-bottom-#{$i}#{$unit-name}{
+		 	margin-bottom: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-right-#{$i}#{$unit-name}{
+		 	margin-right: #{$i}#{$unit} !important;
+		 }
+		 %coc-margin-left-#{$i}#{$unit-name}{
+		 	margin-left: #{$i}#{$unit} !important;
+		 }
+  	}
+	 
+   }
+}
+.coc-margin-0{
+ 	margin: 0 !important;
+ }
+ .coc-margin-x-0{
+ 	margin-right: 0 !important;
+ 	margin-left: 0 !important;
+ }
+ .coc-margin-y-0{
+ 	margin-top: 0 !important;
+ 	margin-bottom: 0 !important;
+ }
+ .coc-margin-top-0{
+ 	margin-top: 0 !important;
+ }
+ .coc-margin-bottom-0{
+ 	margin-bottom: 0 !important;
+ }
+ .coc-margin-right-0{
+ 	margin-right: 0 !important;
+ }
+ .coc-margin-left-0{
+ 	margin-left: 0 !important;
+ }
+ %coc-margin-0{
+ 	margin: 0 !important;
+ }
+ %coc-margin-x-0{
+ 	margin-right: 0 !important;
+ 	margin-left: 0 !important;
+ }
+ %coc-margin-y-0{
+ 	margin-top: 0 !important;
+ 	margin-bottom: 0 !important;
+ }
+ %coc-margin-top-0{
+ 	margin-top: 0 !important;
+ }
+ %coc-margin-bottom-0{
+ 	margin-bottom: 0 !important;
+ }
+ %coc-margin-right-0{
+ 	margin-right: 0 !important;
+ }
+ %coc-margin-left-0{
+ 	margin-left: 0 !important;
+ }

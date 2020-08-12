@@ -1,0 +1,19 @@
+@import "./bounds.scss";
+@import "./border.scss";
+@import "./colors.scss";
+@import "./zindex.scss";
+@import "./app.scss";
+@import "./typography.scss";
+@import "./transition.scss";
+@import "./coc/index.scss";
+
+.coc-section{
+    @extend %coc-content-text;
+    @extend %coc-background-bg;
+    @extend %coc-border-border;
+    @extend %coc-standard-border-radius;
+    @extend %coc-border-1;
+    @extend %coc-padding-y-10px;
+    @extend %coc-padding-x-4px;
+    @extend %coc-margin-y-4px;
+}

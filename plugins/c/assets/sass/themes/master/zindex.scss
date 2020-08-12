@@ -1,0 +1,9 @@
+@import "./variables.scss";
+@each $index, $z-index in $z-dimension {
+    %coc-z-index-#{$index} { 
+        z-index: $z-index;
+    }
+    .coc-z-index-#{$index} { 
+        z-index: $z-index;
+    }
+}

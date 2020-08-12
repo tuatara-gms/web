@@ -1,0 +1,36 @@
+.coc-full-fixed-height{
+  height: 100vh !important;
+  max-height: 100vh !important;
+}
+
+// positions
+.coc-relative{
+	position:  relative;
+}
+.coc-absolute{
+	position:  absolute;
+}
+.coc-fixed{
+	position:  fixed;
+}
+
+// Displays
+
+.coc-inline {
+	display: inline;
+}
+.coc-inline-block {
+	display: inline-block;
+}
+.coc-block {
+	display: block;
+}
+.coc-flex {
+	display: flex;
+}
+.coc-animation-infinite-duration {
+	animation-duration: infinite !important;
+}
+.coc-deanimate {
+	animation: none !important;
+}

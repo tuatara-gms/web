@@ -1,0 +1,20 @@
+%coc-full-width{
+	width: 100%;
+}
+
+.coc-full-width {
+	@extend %coc-full-width;
+}
+
+%coc-full-width-restrict{
+	width: 100%;
+}
+
+.coc-full-width-restrict {
+	@extend %coc-full-width-restrict;
+}
+
+.coc-house-keeper {
+	margin: 0 0 0 0 !important;
+	padding: 0 0 0 0 !important;
+}

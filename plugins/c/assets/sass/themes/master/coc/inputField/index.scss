@@ -1,0 +1,104 @@
+@import "../../colors.scss";
+@import "../../border.scss";
+@import "../../bounds.scss";
+@import "../../typography.scss";
+@import "../../../../bounds/padding.scss";
+@import "../../../../bounds/margin.scss";
+.coc-input-field-container{
+	@extend %coc-primary-background-bg;
+	@extend %coc-border-1;
+	@extend %coc-standard-border-radius;
+	@extend %coc-divider-border;
+	@extend %coc-margin-0;
+	@extend %coc-padding-0;
+}
+// Sizes
+.coc-input-field-container.small{
+	@extend %coc-text-small;
+}
+.coc-input-field-container.small > .coc-input-field{
+	@extend %coc-padding-x-3px;
+	@extend %coc-padding-y-2px;
+	@extend %coc-line-height-small;
+}
+.coc-input-field-container.small > .coc-input-field-append > .coc-input-field-icon,
+.coc-input-field-container.small > .coc-input-field-prepend > .coc-input-field-icon{
+	@extend %coc-line-height-small;
+}
+
+.coc-input-field-container.normal{
+	@extend %coc-text-normal-1;
+}
+.coc-input-field-container.normal > .coc-input-field{
+	@extend %coc-padding-x-5px;
+	@extend %coc-padding-y-3px;
+	@extend %coc-line-height-normal;
+}
+.coc-input-field-container.normal > .coc-input-field-append > .coc-input-field-icon,
+.coc-input-field-container.normal > .coc-input-field-prepend > .coc-input-field-icon{
+	@extend %coc-line-height-normal;
+}
+
+.coc-input-field-container.large{
+	@extend %coc-text-large;
+}
+.coc-input-field-container.large > .coc-input-field{
+	@extend %coc-padding-x-7px;
+	@extend %coc-padding-y-4px;
+	@extend %coc-line-height-large;
+}
+.coc-input-field-container.large > .coc-input-field-append > .coc-input-field-icon,
+.coc-input-field-container.large > .coc-input-field-prepend > .coc-input-field-icon{
+	@extend %coc-line-height-large;
+}
+
+.coc-input-field-container.massive{
+	@extend %coc-text-massive;
+}
+.coc-input-field-container.massive > .coc-input-field{
+	@extend %coc-padding-x-7px;
+	@extend %coc-padding-y-4px;
+	@extend %coc-line-height-massive;
+}
+.coc-input-field-container.massive > .coc-input-field-append > .coc-input-field-icon,
+.coc-input-field-container.massive > .coc-input-field-prepend > .coc-input-field-icon{
+	@extend %coc-line-height-massive;
+}
+
+.coc-input-field-container.focused{
+	box-shadow: none;
+	outline: none;
+	@extend %coc-primary-tint-3-border;
+}
+.coc-input-field-container.success:not(.focused){
+	@extend %coc-success-tint-3-border;
+	@extend %coc-success-text;
+}
+.coc-input-field-container.success.focused{
+	@extend %coc-success-tint-1-border;
+	@extend %coc-success-text;
+}
+.coc-input-field-container.success > .coc-input-field{
+	@extend %coc-success-text;
+}
+
+.coc-input-field-container.error:not(.focused){
+	@extend %coc-error-tint-3-border;
+	@extend %coc-error-text;
+}
+.coc-input-field-container.error.focused{
+	@extend %coc-error-tint-1-border;
+	@extend %coc-error-text;
+}
+.coc-input-field-container.error > .coc-input-field{
+	@extend %coc-error-text;
+}
+.coc-input-field-container > .coc-input-field{
+	@extend %coc-primary-background-bg;
+	@extend %coc-border-0;
+	@extend %coc-standard-border-radius;
+	@extend %coc-content-text;
+}
+.coc-input-field-container >  .coc-input-field:focus{
+	outline: none;
+}

@@ -1,0 +1,550 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gli2r4');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gli2r4#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gli2r4') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gli2r4') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gli2r4##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="tcsc-"], [class*=" tcsc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tcsc-car-icon {
+  &:before {
+    content: $tcsc-car-icon; 
+  }
+}
+.tcsc-traffic-light-icon {
+  &:before {
+    content: $tcsc-traffic-light-icon; 
+  }
+}
+.tcsc-automaton-icon {
+  &:before {
+    content: $tcsc-automaton-icon; 
+  }
+}
+.tcsc-car-1-icon {
+  &:before {
+    content: $tcsc-car-1-icon; 
+  }
+}
+.tcsc-car-2-icon {
+  &:before {
+    content: $tcsc-car-2-icon; 
+  }
+}
+.tcsc-professions-and-jobs-icon {
+  &:before {
+    content: $tcsc-professions-and-jobs-icon; 
+  }
+}
+.tcsc-real-estate-icon {
+  &:before {
+    content: $tcsc-real-estate-icon; 
+  }
+}
+.tcsc-wheel-icon {
+  &:before {
+    content: $tcsc-wheel-icon; 
+  }
+}
+.tcsc-car-3-icon {
+  &:before {
+    content: $tcsc-car-3-icon; 
+  }
+}
+.tcsc-car-accident-icon {
+  &:before {
+    content: $tcsc-car-accident-icon; 
+  }
+}
+.tcsc-robotic-arm-icon {
+  &:before {
+    content: $tcsc-robotic-arm-icon; 
+  }
+}
+.tcsc-speed-icon {
+  &:before {
+    content: $tcsc-speed-icon; 
+  }
+}
+.tcsc-car1-icon {
+  &:before {
+    content: $tcsc-car1-icon; 
+  }
+}
+.tcsc-fuel-icon {
+  &:before {
+    content: $tcsc-fuel-icon; 
+  }
+}
+.tcsc-car-11-icon {
+  &:before {
+    content: $tcsc-car-11-icon; 
+  }
+}
+.tcsc-oil-icon {
+  &:before {
+    content: $tcsc-oil-icon; 
+  }
+}
+.tcsc-motor-icon {
+  &:before {
+    content: $tcsc-motor-icon; 
+  }
+}
+.tcsc-wheel-1-icon {
+  &:before {
+    content: $tcsc-wheel-1-icon; 
+  }
+}
+.tcsc-motor-1-icon {
+  &:before {
+    content: $tcsc-motor-1-icon; 
+  }
+}
+.tcsc-parking-icon {
+  &:before {
+    content: $tcsc-parking-icon; 
+  }
+}
+.tcsc-car-4-icon {
+  &:before {
+    content: $tcsc-car-4-icon; 
+  }
+}
+.tcsc-car-battery-icon {
+  &:before {
+    content: $tcsc-car-battery-icon; 
+  }
+}
+.tcsc-car-5-icon {
+  &:before {
+    content: $tcsc-car-5-icon; 
+  }
+}
+.tcsc-jeep-icon {
+  &:before {
+    content: $tcsc-jeep-icon; 
+  }
+}
+.tcsc-car-6-icon {
+  &:before {
+    content: $tcsc-car-6-icon; 
+  }
+}
+.tcsc-inflate-icon {
+  &:before {
+    content: $tcsc-inflate-icon; 
+  }
+}
+.tcsc-motor1-icon {
+  &:before {
+    content: $tcsc-motor1-icon; 
+  }
+}
+.tcsc-tire-icon {
+  &:before {
+    content: $tcsc-tire-icon; 
+  }
+}
+.tcsc-car-21-icon {
+  &:before {
+    content: $tcsc-car-21-icon; 
+  }
+}
+.tcsc-car-check-icon {
+  &:before {
+    content: $tcsc-car-check-icon; 
+  }
+}
+.tcsc-spring-icon {
+  &:before {
+    content: $tcsc-spring-icon; 
+  }
+}
+.tcsc-turbo-icon {
+  &:before {
+    content: $tcsc-turbo-icon; 
+  }
+}
+.tcsc-broken-car-icon {
+  &:before {
+    content: $tcsc-broken-car-icon; 
+  }
+}
+.tcsc-motor-2-icon {
+  &:before {
+    content: $tcsc-motor-2-icon; 
+  }
+}
+.tcsc-architecture-and-city-icon {
+  &:before {
+    content: $tcsc-architecture-and-city-icon; 
+  }
+}
+.tcsc-car-31-icon {
+  &:before {
+    content: $tcsc-car-31-icon; 
+  }
+}
+.tcsc-car-41-icon {
+  &:before {
+    content: $tcsc-car-41-icon; 
+  }
+}
+.tcsc-racing-game-icon {
+  &:before {
+    content: $tcsc-racing-game-icon; 
+  }
+}
+.tcsc-car-51-icon {
+  &:before {
+    content: $tcsc-car-51-icon; 
+  }
+}
+.tcsc-motor-11-icon {
+  &:before {
+    content: $tcsc-motor-11-icon; 
+  }
+}
+.tcsc-car-wash-icon {
+  &:before {
+    content: $tcsc-car-wash-icon; 
+  }
+}
+.tcsc-technician-icon {
+  &:before {
+    content: $tcsc-technician-icon; 
+  }
+}
+.tcsc-car-61-icon {
+  &:before {
+    content: $tcsc-car-61-icon; 
+  }
+}
+.tcsc-entertainment-icon {
+  &:before {
+    content: $tcsc-entertainment-icon; 
+  }
+}
+.tcsc-bumper-car-icon {
+  &:before {
+    content: $tcsc-bumper-car-icon; 
+  }
+}
+.tcsc-car-7-icon {
+  &:before {
+    content: $tcsc-car-7-icon; 
+  }
+}
+.tcsc-car-8-icon {
+  &:before {
+    content: $tcsc-car-8-icon; 
+  }
+}
+.tcsc-farming-and-gardening-icon {
+  &:before {
+    content: $tcsc-farming-and-gardening-icon; 
+  }
+}
+.tcsc-business-and-finance-icon {
+  &:before {
+    content: $tcsc-business-and-finance-icon; 
+  }
+}
+.tcsc-key-icon {
+  &:before {
+    content: $tcsc-key-icon; 
+  }
+}
+.tcsc-cab-icon {
+  &:before {
+    content: $tcsc-cab-icon; 
+  }
+}
+.tcsc-car-9-icon {
+  &:before {
+    content: $tcsc-car-9-icon; 
+  }
+}
+.tcsc-car-sales-icon {
+  &:before {
+    content: $tcsc-car-sales-icon; 
+  }
+}
+.tcsc-maps-and-location-icon {
+  &:before {
+    content: $tcsc-maps-and-location-icon; 
+  }
+}
+.tcsc-car-sales-1-icon {
+  &:before {
+    content: $tcsc-car-sales-1-icon; 
+  }
+}
+.tcsc-technician-1-icon {
+  &:before {
+    content: $tcsc-technician-1-icon; 
+  }
+}
+.tcsc-architecture-and-city-1-icon {
+  &:before {
+    content: $tcsc-architecture-and-city-1-icon; 
+  }
+}
+.tcsc-car-10-icon {
+  &:before {
+    content: $tcsc-car-10-icon; 
+  }
+}
+.tcsc-investing-icon {
+  &:before {
+    content: $tcsc-investing-icon; 
+  }
+}
+.tcsc-oil1-icon {
+  &:before {
+    content: $tcsc-oil1-icon; 
+  }
+}
+.tcsc-car-battery-1-icon {
+  &:before {
+    content: $tcsc-car-battery-1-icon; 
+  }
+}
+.tcsc-hippie-icon {
+  &:before {
+    content: $tcsc-hippie-icon; 
+  }
+}
+.tcsc-truck-icon {
+  &:before {
+    content: $tcsc-truck-icon; 
+  }
+}
+.tcsc-volkswagen-beetle-icon {
+  &:before {
+    content: $tcsc-volkswagen-beetle-icon; 
+  }
+}
+.tcsc-hover-car-icon {
+  &:before {
+    content: $tcsc-hover-car-icon; 
+  }
+}
+.tcsc-maintenance-icon {
+  &:before {
+    content: $tcsc-maintenance-icon; 
+  }
+}
+.tcsc-car-radio-icon {
+  &:before {
+    content: $tcsc-car-radio-icon; 
+  }
+}
+.tcsc-spray-icon {
+  &:before {
+    content: $tcsc-spray-icon; 
+  }
+}
+.tcsc-car-service-icon {
+  &:before {
+    content: $tcsc-car-service-icon; 
+  }
+}
+.tcsc-taxi-icon {
+  &:before {
+    content: $tcsc-taxi-icon; 
+  }
+}
+.tcsc-car-111-icon {
+  &:before {
+    content: $tcsc-car-111-icon; 
+  }
+}
+.tcsc-car-service-1-icon {
+  &:before {
+    content: $tcsc-car-service-1-icon; 
+  }
+}
+.tcsc-car-12-icon {
+  &:before {
+    content: $tcsc-car-12-icon; 
+  }
+}
+.tcsc-safe-driving-icon {
+  &:before {
+    content: $tcsc-safe-driving-icon; 
+  }
+}
+.tcsc-crane-truck-icon {
+  &:before {
+    content: $tcsc-crane-truck-icon; 
+  }
+}
+.tcsc-turbo1-icon {
+  &:before {
+    content: $tcsc-turbo1-icon; 
+  }
+}
+.tcsc-car-parts-icon {
+  &:before {
+    content: $tcsc-car-parts-icon; 
+  }
+}
+.tcsc-crane-truck-1-icon {
+  &:before {
+    content: $tcsc-crane-truck-1-icon; 
+  }
+}
+.tcsc-checklist-icon {
+  &:before {
+    content: $tcsc-checklist-icon; 
+  }
+}
+.tcsc-motor-3-icon {
+  &:before {
+    content: $tcsc-motor-3-icon; 
+  }
+}
+.tcsc-generator-icon {
+  &:before {
+    content: $tcsc-generator-icon; 
+  }
+}
+.tcsc-insurance-icon {
+  &:before {
+    content: $tcsc-insurance-icon; 
+  }
+}
+.tcsc-car-13-icon {
+  &:before {
+    content: $tcsc-car-13-icon; 
+  }
+}
+.tcsc-insurance-1-icon {
+  &:before {
+    content: $tcsc-insurance-1-icon; 
+  }
+}
+.tcsc-fix-icon {
+  &:before {
+    content: $tcsc-fix-icon; 
+  }
+}
+.tcsc-insurance-2-icon {
+  &:before {
+    content: $tcsc-insurance-2-icon; 
+  }
+}
+.tcsc-storage-icon {
+  &:before {
+    content: $tcsc-storage-icon; 
+  }
+}
+.tcsc-transportation-icon {
+  &:before {
+    content: $tcsc-transportation-icon; 
+  }
+}
+.tcsc-gear-box-icon {
+  &:before {
+    content: $tcsc-gear-box-icon; 
+  }
+}
+.tcsc-inventory-icon {
+  &:before {
+    content: $tcsc-inventory-icon; 
+  }
+}
+.tcsc-electric-car-icon {
+  &:before {
+    content: $tcsc-electric-car-icon; 
+  }
+}
+.tcsc-inventory-1-icon {
+  &:before {
+    content: $tcsc-inventory-1-icon; 
+  }
+}
+.tcsc-stock-icon {
+  &:before {
+    content: $tcsc-stock-icon; 
+  }
+}
+.tcsc-transportation-1-icon {
+  &:before {
+    content: $tcsc-transportation-1-icon; 
+  }
+}
+.tcsc-news-report-icon {
+  &:before {
+    content: $tcsc-news-report-icon; 
+  }
+}
+.tcsc-transportation-2-icon {
+  &:before {
+    content: $tcsc-transportation-2-icon; 
+  }
+}
+.tcsc-cost-icon {
+  &:before {
+    content: $tcsc-cost-icon; 
+  }
+}
+.tcsc-market-analysis-icon {
+  &:before {
+    content: $tcsc-market-analysis-icon; 
+  }
+}
+.tcsc-car-services-icon {
+  &:before {
+    content: $tcsc-car-services-icon; 
+  }
+}
+.tcsc-margin-icon {
+  &:before {
+    content: $tcsc-margin-icon; 
+  }
+}
+.tcsc-warehouse-icon {
+  &:before {
+    content: $tcsc-warehouse-icon; 
+  }
+}
+.tcsc-warehouse-1-icon {
+  &:before {
+    content: $tcsc-warehouse-1-icon; 
+  }
+}
+.tcsc-stock-1-icon {
+  &:before {
+    content: $tcsc-stock-1-icon; 
+  }
+}
+.tcsc-stock-2-icon {
+  &:before {
+    content: $tcsc-stock-2-icon; 
+  }
+}
+

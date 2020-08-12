@@ -1,0 +1,33 @@
+@import "../../colors.scss";
+.coc-docker{
+	position: fixed !important;
+	@extend %coc-background-tint-3-bg;
+	@extend %coc-border-border;
+	@extend %coc-border-1;
+	@extend %coc-top-right-standard-border-radius;
+	@extend %coc-top-left-standard-border-radius;
+	bottom: -4vh !important;
+	width: 90vw;
+	left: 5vw;
+	transition: bottom 700ms;
+	z-index: 999;
+	margin-bottom: 0;
+}
+.coc-docker.active{
+	bottom: 0 !important;
+}
+.coc-docker-item{
+	@extend %coc-primary-text;
+	position: relative;
+	height: 100%;
+	bottom: 0;
+}
+.coc-docker-item-icon{
+	font-size: 250%;
+	transition: font-size 100ms;
+	bottom: 0;
+}
+.coc-docker-item-icon.mouse-over{
+	position: relative;
+	font-size: 300%;
+}

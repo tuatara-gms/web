@@ -1,0 +1,24 @@
+@import "./variables.scss";
+$directions: "top-right" "bottom-right" "top-left" "bottom-left";
+@each $borderRadius, $current-borderRadius in $border-radius {
+    .coc-#{$borderRadius}-border-radius { 
+        border-radius: $current-borderRadius;
+    }
+    %coc-#{$borderRadius}-border-radius { 
+        border-radius: $current-borderRadius;
+    }
+    @each $dir in $directions{
+ 	%coc-#{$dir}-#{$borderRadius}-border-radius { 
+        border-#{$dir}-radius: $current-borderRadius;
+    }
+    .coc-#{$dir}-#{$borderRadius}-border-radius { 
+       @extend %coc-#{$dir}-#{$borderRadius}-border-radius;
+    }
+ }
+}
+.coc-no-outline {
+    outline: none;
+}
+.coc-focus-no-outline:focus {
+    outline: none;
+}

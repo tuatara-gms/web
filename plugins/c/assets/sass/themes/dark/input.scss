@@ -1,0 +1,28 @@
+@import "./border.scss";
+@import "./colors.scss";
+
+.coc-input-success input, .coc-input-success input:focus,
+.coc-input-success .ivu-select-selection,
+.coc-input-success .ivu-select-selection:focus,
+.coc-input-success .ivu-select-selection-focused{
+	border:  none !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	@extend %coc-success-tint-8-bg;
+	@extend %coc-success-shade-3-text;
+	@extend %coc-success-shade-3-border;
+	box-shadow: none !important;
+}
+
+.coc-input-error input, .coc-input-error input:focus,
+.coc-input-error .ivu-select-selection,
+.coc-input-error .ivu-select-selection:focus,
+.coc-input-error .ivu-select-selection-focused{
+	border:  none !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	@extend %coc-error-tint-8-bg;
+	@extend %coc-error-text;
+	@extend %coc-error-border;
+	box-shadow: none !important;
+}

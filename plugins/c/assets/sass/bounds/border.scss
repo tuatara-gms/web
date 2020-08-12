@@ -1,0 +1,37 @@
+$units: (
+	"%": "perc",
+	"px": "px"
+);
+$directions: "top" "bottom" "right" "left";
+
+//Border Radius
+@each $unit, $unit-name in $units{
+  @for $i from 1 through 50{
+	.coc-border-radius-#{$i}#{$unit-name}{
+	 	border-radius: #{$i}#{$unit} !important;
+	 }
+   }
+}
+
+//Border Sizes
+
+@for $i from 0 through 3{
+	.coc-border-#{$i}{
+	 	border-width: #{$i}px !important;
+	 	border-style: solid;
+	}
+	%coc-border-#{$i}{
+	 	border-width: #{$i}px !important;
+	 	border-style: solid;
+	}
+ @each $dir in $directions{
+ 	.coc-border-#{$dir}-#{$i}{
+	 	border-#{$dir}-width: #{$i}px !important;
+	 	border-style: solid;
+	 }
+	 %coc-border-#{$dir}-#{$i}{
+	 	border-#{$dir}-width: #{$i}px !important;
+	 	border-style: solid;
+	 }
+ }
+}
