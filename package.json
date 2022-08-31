@@ -29,7 +29,7 @@
     "iview": "^3.1.5",
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
-    "moment-timezone": "^0.5.26",
+    "moment-timezone": "^0.5.35",
     "nuxt": "^2.0.0",
     "view-design": "^4.0.0",
     "vue-carousel": "^0.18.0"
