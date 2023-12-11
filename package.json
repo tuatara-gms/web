@@ -30,7 +30,7 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.26",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.2",
     "view-design": "^4.0.0",
     "vue-carousel": "^0.18.0"
   },
